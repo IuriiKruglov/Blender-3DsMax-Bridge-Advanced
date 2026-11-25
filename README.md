@@ -212,7 +212,7 @@ Both sides use the same default bridge folder. If you change it on one side, cha
 
 | Blender: *Max Bridge* tab (3D Viewport sidebar, **N**) | 3ds Max: the bridge window |
 | :---: | :---: |
-| <img src="images/blender_panel.jpg" alt="Blender: the Max Bridge tab of the 3D Viewport sidebar" width="276"> | <img src="images/max_window.jpg" alt="3ds Max: the bridge window" width="425"> |
+| <img src="images/blender_panel.JPG" alt="Blender: the Max Bridge tab of the 3D Viewport sidebar" width="276"> | <img src="images/max_window.JPG" alt="3ds Max: the bridge window" width="425"> |
 
 **Blender → 3ds Max**
 1. In **3ds Max**, run the script and press **Start listening**. It shows *Listener: waiting for Blender*.
