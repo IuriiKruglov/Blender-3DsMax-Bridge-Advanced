@@ -9,7 +9,7 @@
 
 [![Video demo](https://img.youtube.com/vi/JLfaM6lJrOw/hqdefault.jpg)](https://www.youtube.com/watch?v=JLfaM6lJrOw)
 
-▶️ **[Video demo](https://www.youtube.com/watch?v=JLfaM6lJrOw)** · [earlier demo of Blender → 3ds Max (2.x)](https://youtu.be/yLYJzMyWv8I)
+
 
 It unites the two one-way tools: **Blender → 3ds Max Bridge 2.5.1** ([BlenderTo3DsMax](https://github.com/IuriiKruglov/BlenderTo3DsMax)) and **3ds Max → Blender Bridge 0.9**. Everything both of them do is in it, plus a **Reset** button on both sides.
 
