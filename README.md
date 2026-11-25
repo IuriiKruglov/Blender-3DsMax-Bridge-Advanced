@@ -7,7 +7,9 @@
 ![3ds Max 2022–2026](https://img.shields.io/badge/3ds%20Max-2022--2026-blue)
 ![Version 3.0](https://img.shields.io/badge/version-3.0-informational)
 
-▶️ **[Video demo of Blender → 3ds Max (2.x)](https://youtu.be/yLYJzMyWv8I)**
+[![Video demo](https://img.youtube.com/vi/JLfaM6lJrOw/hqdefault.jpg)](https://www.youtube.com/watch?v=JLfaM6lJrOw)
+
+▶️ **[Video demo](https://www.youtube.com/watch?v=JLfaM6lJrOw)** · [earlier demo of Blender → 3ds Max (2.x)](https://youtu.be/yLYJzMyWv8I)
 
 It unites the two one-way tools: **Blender → 3ds Max Bridge 2.5.1** ([BlenderTo3DsMax](https://github.com/IuriiKruglov/BlenderTo3DsMax)) and **3ds Max → Blender Bridge 0.9**. Everything both of them do is in it, plus a **Reset** button on both sides.
 
@@ -22,6 +24,8 @@ Created by Claude (Anthropic) under the leadership of Kruglov Iurii.
 | Scene scan (diagnostics, optional) | [`tools/MaxSceneScan.ms`](tools/MaxSceneScan.ms) | 3ds Max 2024 – 2026 |
 
 Download them from the latest release (*Releases* on the repository page, under *Assets*), or open each file above and press **Download raw file** (the download icon above the code). Then follow [Installation](#installation).
+
+The add-on and the script are also on [Gumroad](https://tricky3d.gumroad.com/l/Blender-3DsMax-Bridge-Advanced).
 
 ---
 
@@ -205,6 +209,10 @@ Both sides use the same default bridge folder. If you change it on one side, cha
 ---
 
 ## Quick start
+
+| Blender: *Max Bridge* tab (3D Viewport sidebar, **N**) | 3ds Max: the bridge window |
+| :---: | :---: |
+| <img src="images/blender_panel.jpg" alt="Blender: the Max Bridge tab of the 3D Viewport sidebar" width="276"> | <img src="images/max_window.jpg" alt="3ds Max: the bridge window" width="425"> |
 
 **Blender → 3ds Max**
 1. In **3ds Max**, run the script and press **Start listening**. It shows *Listener: waiting for Blender*.
@@ -930,7 +938,7 @@ The report also logs *evidence lines*: 3ds Max tangent and unit conventions as m
 - Skins that share bones but move against each other in 3ds Max (an animated object between the meshes): the armature hangs under the first mesh, and the others follow their own object's motion in Blender, not only their bones (the report warns).
 - Skin bones: only nodes that a Skin uses (and dummies or points linked between them) become bones; a sheared node, or one with a Skin or live modifiers of its own, stays an object that its bone follows. The geometry of 3ds Max bones (width, height, fins) is not kept. IK, Biped and CAT motion arrives baked, as for any baked controller. So do Freeze Transform layers (list controllers), such as those of *Exact bones* of Blender → 3ds Max: the motion is exact, with a key on every frame; taking their zero layers back as Blender's pose bone keys is not done yet.
 - Cameras and lights arrive as Empties; 3ds Max bones that no Skin uses arrive with their geometry. Morpher and visibility or modifier animation are not transferred.
-- Vertex alpha/illumination channels and UV channels beyond 8 are skipped. Rectangular renderable splines are approximated.
+- Rectangular renderable splines are approximated.
 - Baked motion is exact on whole frames of the range; between frames it is linear.
 
 ---
@@ -1025,6 +1033,7 @@ See [Limits (3ds Max → Blender)](#limits-3ds-max--blender).
 | [`BlenderMaxBridge.ms`](BlenderMaxBridge.ms) | 3ds Max script, both directions |
 | [`tools/MaxSceneScan.ms`](tools/MaxSceneScan.ms) | Read-only scan of a 3ds Max scene to JSON, for diagnosing *Send to Blender* (1.2) |
 | [`LICENSE`](LICENSE) | GNU General Public License v3.0 |
+| [`images/`](images) | Screenshots for this README |
 
 The file names stay the same from version to version, so each update replaces the file and GitHub keeps every earlier version in the history.
 
