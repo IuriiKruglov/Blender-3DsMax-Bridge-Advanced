@@ -21,7 +21,7 @@ Created by Claude (Anthropic) under the leadership of Kruglov Iurii.
 | 3ds Max script (both directions) | [`BlenderMaxBridge.ms`](BlenderMaxBridge.ms) | 3ds Max 2022 – 2026 (*Send to Blender*: 2024 – 2026) |
 | Scene scan (diagnostics, optional) | [`tools/MaxSceneScan.ms`](tools/MaxSceneScan.ms) | 3ds Max 2024 – 2026 |
 
-Open each file and press **Download raw file** (the download icon above the code), then follow [Installation](#installation).
+Download them from the latest release (*Releases* on the repository page, under *Assets*), or open each file above and press **Download raw file** (the download icon above the code). Then follow [Installation](#installation).
 
 ---
 
